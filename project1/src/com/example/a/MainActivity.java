@@ -29,14 +29,14 @@ public class MainActivity extends Activity {
       //initiating both tabs and set text to it.
         ActionBar.Tab PlayerTab = actionbar.newTab().setText("Fragment A");
         ActionBar.Tab StationsTab = actionbar.newTab().setText("Fragment B");
-        ActionBar.Tab tres = actionbar.newTab().setText("Fragment c");
-        ActionBar.Tab cuatro = actionbar.newTab().setText("Fragment d");
+        ActionBar.Tab tres = actionbar.newTab().setText("StreamingReal");
+        ActionBar.Tab cuatro = actionbar.newTab().setText("WebView");
  
      //create the two fragments we want to use for display content
         Fragment PlayerFragment = new AFragment();
         Fragment StationsFragment = new BFragment();
-        Fragment tresfrag = new BFragment();
-        Fragment cuatrofrag = new BFragment();
+        Fragment tresfrag = new CFragment();
+        Fragment cuatrofrag = new DFragment();
  
     //set the Tab listener. Now we can listen for clicks.
         PlayerTab.setTabListener(new MyTabsListener(PlayerFragment));
@@ -51,18 +51,18 @@ public class MainActivity extends Activity {
         actionbar.addTab(tres);
         actionbar.addTab(cuatro);
 
-        NotificationCompat.Builder mBuilder =
-        	    new NotificationCompat.Builder(this)
-        	    .setSmallIcon(R.drawable.ic_launcher)
-        	    .setContentTitle("My notification")
-        	    .setContentText("Hello World!").setAutoCancel(true);
-        int mNotificationId = 001;
-        
-	     // Gets an instance of the NotificationManager service
-	     NotificationManager mNotifyMgr = 
-	             (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-	     // Builds the notification and issues it.
-	     mNotifyMgr.notify(mNotificationId, mBuilder.build());
+//        NotificationCompat.Builder mBuilder =
+//        	    new NotificationCompat.Builder(this)
+//        	    .setSmallIcon(R.drawable.ic_launcher)
+//        	    .setContentTitle("My notification")
+//        	    .setContentText("Hello World!").setAutoCancel(true);
+//        int mNotificationId = 001;
+//        
+//	     // Gets an instance of the NotificationManager service
+//	     NotificationManager mNotifyMgr = 
+//	             (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+//	     // Builds the notification and issues it.
+//	     mNotifyMgr.notify(mNotificationId, mBuilder.build());
         
     }
 
