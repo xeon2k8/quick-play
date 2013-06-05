@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.widget.MediaController;
-import android.widget.VideoView;
 
 public class MainActivity extends Activity {
 
